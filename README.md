@@ -27,6 +27,8 @@ reviews/       # 实现评审记录
 .github/ISSUE_TEMPLATE/implementation-request.md   # 实现申请 issue 模板
 ```
 
+> 领域级基础组件（如 DFT rule / memory）统一存放于 [ai-native-basic-component](https://github.com/LiJiaT/ai-native-basic-component) 的 `rules/<domain>/`、`memory/<domain>/`；本 repo 保留项目级实现与 `build/` 历史。
+
 ## 实现流程
 
 1. 技能 B 读取 approved asset record 与目标组件 profile，按 ai_form 加载对应 playbook 生成实现物；
