@@ -1,0 +1,27 @@
+{
+  "type": "implementation",
+  "asset_id": "EA-20261022-07",
+  "proposal_id": "20261022-1705-hbm3e-dft-meeting",
+  "ai_form": "Memory",
+  "title": "HBM3E DFT 环境基线：V0.9 工具链与修复资源",
+  "owner": "HBM 项目负责人",
+  "layer": "项目级",
+  "project": "HBM",
+  "domains": [
+    "DFT"
+  ],
+  "build_date": "2026-10-22",
+  "artifacts": [
+    "memory-entry.md"
+  ],
+  "tests": [
+    "independent-check.md"
+  ],
+  "source_record": "assets/20261022-1705-hbm3e-dft-meeting/EA-20261022-07-hbm3e-dft-env-baseline.md",
+  "install_target": "<HBM 项目>/.claude/memory/hbm3e-dft-env-baseline.md 或 ~/.claude/projects/<hbm-project-slug>/memory/hbm3e-dft-env-baseline.md",
+  "validation": {
+    "validator": "asset-ai-ize/scripts/validate_build.py",
+    "assets_repo": "D:/Project/eng-knowledge-assets",
+    "result": "pass"
+  }
+}

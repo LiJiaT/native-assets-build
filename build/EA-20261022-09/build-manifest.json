@@ -1,0 +1,28 @@
+{
+  "type": "implementation",
+  "asset_id": "EA-20261022-09",
+  "proposal_id": "20261022-1705-hbm3e-dft-meeting",
+  "ai_form": "Memory",
+  "title": "HBM3E 修复层级决策：选 stack-level",
+  "owner": "DFT 领域 owner",
+  "layer": "领域级",
+  "project": "HBM",
+  "domains": [
+    "DFT",
+    "设计"
+  ],
+  "build_date": "2026-10-22",
+  "artifacts": [
+    "memory-entry.md"
+  ],
+  "tests": [
+    "independent-check.md"
+  ],
+  "source_record": "assets/20261022-1705-hbm3e-dft-meeting/EA-20261022-09-stack-level-repair-decision.md",
+  "install_target": "~/.claude/projects/<project-slug>/memory/hbm3e-stack-level-repair-decision.md（领域级载体由 owner 指定，不自建 ~/.claude/memory/domains/）",
+  "validation": {
+    "validator": "asset-ai-ize/scripts/validate_build.py",
+    "assets_repo": "D:/Project/eng-knowledge-assets",
+    "result": "pass"
+  }
+}

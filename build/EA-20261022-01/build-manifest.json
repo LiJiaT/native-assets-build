@@ -1,0 +1,25 @@
+{
+  "type": "implementation",
+  "asset_id": "EA-20261022-01",
+  "proposal_id": "20261022-1705-decision-domain-taxonomy",
+  "ai_form": "Memory",
+  "title": "资产分类体系定为 9 领域平铺 + 2 项目正交",
+  "owner": "AI 平台团队",
+  "layer": "公共级",
+  "project": "无",
+  "domains": [],
+  "build_date": "2026-10-22",
+  "artifacts": [
+    "memory-entry.md"
+  ],
+  "tests": [
+    "independent-check.md"
+  ],
+  "source_record": "assets/20261022-1705-decision-domain-taxonomy/EA-20261022-01-asset-domain-taxonomy.md",
+  "install_target": "~/.claude/CLAUDE.md 受管区块（推荐）或 ~/.claude/projects/<project-slug>/memory/asset-taxonomy.md（项目级降级）",
+  "validation": {
+    "validator": "asset-ai-ize/scripts/validate_build.py",
+    "assets_repo": "D:/Project/eng-knowledge-assets",
+    "result": "pass"
+  }
+}

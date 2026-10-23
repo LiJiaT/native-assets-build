@@ -1,0 +1,24 @@
+{
+  "type": "implementation",
+  "asset_id": "EA-20261022-06",
+  "proposal_id": "20261022-1705-ai-public-rules",
+  "ai_form": "Rule",
+  "title": "原始记录不得写入长期记忆",
+  "owner": "AI 平台团队",
+  "layer": "公共级",
+  "project": "无",
+  "build_date": "2026-10-22",
+  "artifacts": [
+    "rule-no-raw-records-in-memory.md"
+  ],
+  "tests": [
+    "trigger-cases.md"
+  ],
+  "source_record": "assets/20261022-1705-ai-public-rules/EA-20261022-06-no-raw-records-in-memory.md",
+  "install_target": "~/.claude/rules/no-raw-records-in-memory.md",
+  "validation": {
+    "validator": "asset-ai-ize/scripts/validate_build.py",
+    "assets_repo": "D:/Project/eng-knowledge-assets",
+    "result": "pass"
+  }
+}

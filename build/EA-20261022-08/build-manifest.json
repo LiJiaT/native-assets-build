@@ -1,0 +1,28 @@
+{
+  "type": "implementation",
+  "asset_id": "EA-20261022-08",
+  "proposal_id": "20261022-1705-hbm3e-dft-meeting",
+  "ai_form": "Rule",
+  "title": "bist_en 与 scan_en 禁止同周期拉高",
+  "owner": "DFT 领域 owner",
+  "layer": "领域级",
+  "domains": [
+    "DFT",
+    "时序"
+  ],
+  "project": "HBM",
+  "build_date": "2026-10-22",
+  "artifacts": [
+    "rule-bist-scan-same-cycle.md"
+  ],
+  "tests": [
+    "trigger-cases.md"
+  ],
+  "source_record": "assets/20261022-1705-hbm3e-dft-meeting/EA-20261022-08-bist-scan-same-cycle-rule.md",
+  "install_target": "~/.claude/rules/bist-scan-same-cycle-exclusion.md（推荐）或 $DFT_PROJECT/.claude/rules/bist-scan-same-cycle-exclusion.md",
+  "validation": {
+    "validator": "asset-ai-ize/scripts/validate_build.py",
+    "assets_repo": "D:/Project/eng-knowledge-assets",
+    "result": "pass"
+  }
+}
