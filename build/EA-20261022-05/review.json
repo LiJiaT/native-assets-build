@@ -9,7 +9,7 @@
   "reviewed_at": "2026-10-24",
   "basis": "owner approval 2026-10-22/23 recorded in eng-knowledge-assets; deterministic re-validation 2026-10-24 by AI assistant",
   "artifact_sha256": {
-    "rule-subtask-acceptance-checklist.md": "e711db733363a9ab9739aee2e8206bd94fc5703f4d13c6be8219c1f07a0f1e28"
+    "rule-subtask-acceptance-checklist.md": "9784e1fb7e7d236335f07669d5e42a287ce6845d6b42e423898fb6ab81605bb6"
   },
   "checklist": [
     {
@@ -41,6 +41,13 @@
       "id": "semantic-preservation",
       "result": "pass",
       "note": "implementation.md 语义保持对照节存在；语义结论仍由 owner 复核"
+    },
+    {
+      "id": "consumer-test",
+      "result": "pass",
+      "note": "tests/consumer_check.py 以消费者方式加载 artifact，证据见 tests/consumer-test.log"
     }
-  ]
+  ],
+  "source_record_sha256": "07e9c3d586481072b7622ccd5dcbf8720cd9f6656ad32f8a3ff2b30a90387924",
+  "source_content_sha256": "629dfb4db23b56ec638c9bf079423523492add01d463374c7b2a719050ba1a6e"
 }

@@ -13,7 +13,7 @@
 | record | eng-knowledge-assets `assets/20261022-1705-hbm3e-dft-meeting/EA-20261022-08-bist-scan-same-cycle-rule.md`（approved 2026-10-22） |
 | 组件 owner | DFT 领域 owner（record owner；实际组件 owner 由评审指定） |
 | build 日期 | 2026-10-22 |
-| 实现物 | `artifacts/rule-bist-scan-same-cycle.md` → 建议安装名 `~/.claude/rules/bist-scan-same-cycle-exclusion.md`（或项目级 rules） |
+| 实现物 | `artifacts/rule-bist-scan-same-cycle.md` → 唯一安装点 `~/.claude/test-sandbox/rules/bist-scan-same-cycle-exclusion.md`（test-only） |
 
 ## 语义保持对照
 
@@ -30,7 +30,7 @@ statement 的每条结论逐条落到 artifact，未增删语义。
 ## 设计取舍
 
 1. **未加 `paths:`**：record 的生效条件是"OCC 窗口内并存 repair/MBIST 时钟与 scan 时钟的 DFT 设计"，属设计范围而非文件类型；若硬加 `paths: ["**/*.sdc"]` 会漏掉波形检查与约束评审场景（第 4 条结论），造成语义收窄。故适用范围由「## 适用范围」节按设计条件判定，`install.md` 另注明项目本地可按需自定义 `paths`，但那是项目定制、需单独裁决。
-2. **安装范围（synthetic 状态）**：本包仅 `test-only`，不提供生产安装范围。若未来转为真实资产，由 owner 在"项目级 `.claude/rules/`（推荐，避免无 DFT 工作的会话加载）"与"用户级 + 领域适用范围"之间**选定唯一目标**，并同步 manifest/implementation/install/review/rollback；不得同时保留两套推荐。
+2. **安装范围（synthetic 状态）**：本包仅 `test-only` / `test-sandbox`，唯一落点为 `~/.claude/test-sandbox/rules/`，不提供用户级或项目级生产安装命令。若未来转为真实资产，须由 owner 重新批准层级与 release_channel 并生成新实现包，旧 test-only 包不得直接复用。
 3. **副标签（知识库）处理**：「违反后果」节承载"为什么不能同周期"的机理知识，供规则解释与培训引用；按主形态 Rule 实现，不另造 memory 组件（技能 B 的"主形态实现、副标签挂接建议写在 implementation.md"口径）。
 4. **不扩写时序方案**：record 未给出具体 OCC 时序实现方式（如切换周期数、握手信号），artifact 不发明方案，只规定判定口径与必检项，避免演绎。
 5. **去重扫描**：`~/.claude/rules/` 现有 4 条与 `eng-asset-ai-components/rules/` 均无 DFT/MBIST/scan 时序互斥内容，无重复实现。
@@ -46,11 +46,11 @@ statement 的每条结论逐条落到 artifact，未增删语义。
 - 资产 ID：EA-20261022-08
 - 来源提案 ID：20261022-1705-hbm3e-dft-meeting
 - 目标组件形态：Rule
-- 目标层级 / 领域 / 项目：领域级 / DFT、时序 / HBM（安装按 DFT 项目级）
+- 目标层级 / 领域 / 项目：领域级 / DFT、时序 / HBM（来源项目；test-only 只装 test-sandbox）
 - 组件 owner：DFT 领域 owner
 - 变更内容：新增 `rules/bist-scan-same-cycle-exclusion.md`（package：`build/EA-20261022-08/`）
 - 验收清单：目录与 manifest 对账、record approved 与 proposal/ai_form 一致、frontmatter 含 asset_id 与 ai_form、无敏感信息、无 record 原文混入、语义保持对照通过、触发样例通过（DFT 时序场景）
-- 回滚方式：revert 合入 PR；已安装环境删除项目 `.claude/rules/bist-scan-same-cycle-exclusion.md`
+- 回滚方式：移除 `~/.claude/test-sandbox/rules/bist-scan-same-cycle-exclusion.md`；不涉及生产 rules/settings
 
 ## 校验记录
 

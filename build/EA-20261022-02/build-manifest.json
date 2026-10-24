@@ -12,7 +12,9 @@
   ],
   "tests": [
     "trigger-cases.md",
-    "results.json"
+    "results.json",
+    "consumer_check.py",
+    "consumer-test.log"
   ],
   "source_record": "assets/20261022-1705-ai-public-rules/EA-20261022-02-filelist-sync.md",
   "install_target": "user-global",

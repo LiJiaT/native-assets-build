@@ -4,7 +4,7 @@ description: 向下游执行方下发的每个子任务必须携带验收清单�
 asset_id: EA-20261022-05
 ai_form: Rule
 provenance_status: source-excerpt
-provenance_note: 摘自《AI 公共规范（v0.5 草案）》4.4 节，未逐条对照规范全文核验
+provenance_note: 摘自《AI 公共规范（v0.7 草案）》revision 5277 的强制规则清单（原记录写 v0.5，2026-10-24 对齐当前基线），未逐条对照规范全文核验。
 release_channel: component-library
 source_record: assets/20261022-1705-ai-public-rules/EA-20261022-05-subtask-acceptance-checklist.md
 ---

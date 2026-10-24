@@ -9,7 +9,7 @@
   "reviewed_at": "2026-10-24",
   "basis": "owner approval 2026-10-22/23 recorded in eng-knowledge-assets; deterministic re-validation 2026-10-24 by AI assistant",
   "artifact_sha256": {
-    "rule-verilog-filelist-sync.md": "b934eb34de2128ff95b56e46a0d645342ba8490467072359195ca85202087e48"
+    "rule-verilog-filelist-sync.md": "72b1cf46dca5031b3a47e2b32ca254004a7f2acfa6f54254124f146a93c4276b"
   },
   "checklist": [
     {
@@ -41,6 +41,13 @@
       "id": "semantic-preservation",
       "result": "pass",
       "note": "implementation.md 语义保持对照节存在；语义结论仍由 owner 复核"
+    },
+    {
+      "id": "consumer-test",
+      "result": "pass",
+      "note": "tests/consumer_check.py 以消费者方式加载 artifact，证据见 tests/consumer-test.log"
     }
-  ]
+  ],
+  "source_record_sha256": "4829abba6be6dae202e0273447e43913023cbbb925412090c7c4870ddba4bd81",
+  "source_content_sha256": "cd505ca76c1c3b7c8b4a08145302172bae67e21497880ddda86d99875aac1819"
 }

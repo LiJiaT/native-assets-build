@@ -9,13 +9,50 @@
   "reviewed_at": "2026-10-24",
   "basis": "synthetic 资产仅用于流程验证；已撤出生产安装点",
   "artifact_sha256": {
-    "memory-entry.md": "e80cc0b216f7fce0a6c55294e464812e7210cb7dc25a41dc7fd399c8a423275d"
+    "memory-entry.md": "39ad542e080ea873a137a613be5829ca9f531dd682d5895fa983ce9773ede2b9"
   },
   "checklist": [
     {
       "id": "test-only-isolation",
       "result": "pass",
       "note": "release_channel=test-only；install_target=test-sandbox"
+    },
+    {
+      "id": "record-binding",
+      "result": "pass",
+      "note": "record 与审批 hash 匹配"
+    },
+    {
+      "id": "manifest-schema",
+      "result": "pass",
+      "note": "schema v2 必填字段与对账通过"
+    },
+    {
+      "id": "artifact-provenance",
+      "result": "pass",
+      "note": "artifact asset_id/ai_form/asset_type/provenance/source_record 一致"
+    },
+    {
+      "id": "sensitive-scan",
+      "result": "pass",
+      "note": "无密钥/令牌模式"
+    },
+    {
+      "id": "syntax",
+      "result": "pass",
+      "note": "Python/shell 语法检查通过（适用时）"
+    },
+    {
+      "id": "semantic-preservation",
+      "result": "pass",
+      "note": "implementation.md 语义保持对照节存在；语义结论由 owner 复核"
+    },
+    {
+      "id": "consumer-test",
+      "result": "pass",
+      "note": "tests/consumer_check.py 以消费者方式加载 artifact，证据见 tests/consumer-test.log"
     }
-  ]
+  ],
+  "source_record_sha256": "32bc1c4a01076be2dd233782080b8477b76e08d4cd93d623b3968e9f38fa5c94",
+  "source_content_sha256": "b44f13c3587b6d3990bb92e6226796069da40c652d1cc492ab3b3fdc2b96fe99"
 }

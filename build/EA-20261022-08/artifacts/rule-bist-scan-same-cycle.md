@@ -8,6 +8,7 @@ provenance_status: synthetic
 provenance_note: 由构造的 HBM3E DFT 会议纪要生成，仅用于验证资产化流程，不代表真实项目结论
 release_channel: test-only
 source_record: assets/20261022-1705-hbm3e-dft-meeting/EA-20261022-08-bist-scan-same-cycle-rule.md
+asset_type: rule
 ---
 # bist_en 与 scan_en 禁止同周期拉高
 

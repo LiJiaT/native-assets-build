@@ -7,9 +7,11 @@ project: 无
 domains: []
 approved_date: '2026-10-22'
 provenance_status: source-excerpt
-provenance_note: 2026-10-22 资产化体系设计决策的摘要，原始记录未在仓库留存；与《AI 公共规范 v0.5》1.2 节核对后可升级为 verified
+provenance_note: 2026-10-22 资产化体系设计决策的摘要；当前对应《AI 公共规范（v0.7 草案）》revision 5277 的 1.2
+  节。原始记录未在仓库留存，暂保持 source-excerpt。
 release_channel: component-library
 source_record: assets/20261022-1705-decision-domain-taxonomy/EA-20261022-01-asset-domain-taxonomy.md
+asset_type: memory
 ---
 **决策**：工程知识资产化体系的分类元数据采用自建结构——「9 个专业领域平铺 + 2 个固定项目 + 四维正交」，不引入外部知识收集项目的细粒度标签体系。**背景**：设计领域划分时，最初方案是复用外部知识收集项目（论文库、公众号、GitHub radar 三个项目共享）的统一标签体系——8 个顶层主题加 72 个子标签，期望收集端与资产治理端共用一套标签。
 

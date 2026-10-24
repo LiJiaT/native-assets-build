@@ -4,7 +4,7 @@ description: 不把原始记录（会议原文、聊天记录、调试日志、�
 asset_id: EA-20261022-06
 ai_form: Rule
 provenance_status: source-excerpt
-provenance_note: 摘自《AI 公共规范（v0.5 草案）》4.4 节，未逐条对照规范全文核验
+provenance_note: 摘自《AI 公共规范（v0.7 草案）》revision 5277 的强制规则清单（原记录写 v0.5，2026-10-24 对齐当前基线），未逐条对照规范全文核验。
 release_channel: component-library
 source_record: assets/20261022-1705-ai-public-rules/EA-20261022-06-no-raw-records-in-memory.md
 ---

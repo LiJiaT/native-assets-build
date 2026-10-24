@@ -2,7 +2,7 @@
   "schema_version": "1",
   "asset_id": "EA-20261022-08",
   "result": "pass",
-  "tested_at": "2026-10-24T08:51:18+0800",
+  "tested_at": "2026-10-24T18:31:24+0800",
   "tested_by": "Claude Code (AI assistant), owner-authorized 2026-10-24",
   "scope": "deterministic structure/record/scope/artifact checks; 语义有效性由 owner 复核",
   "commands": [
@@ -15,9 +15,23 @@
       "command": "C:\\Users\\jie.li\\AppData\\Local\\Programs\\Python\\Python314\\python.exe -X utf8 D:\\Project\\ai-native-basic-component\\gates\\gate.py record --assets-repo D:\\Project\\eng-knowledge-assets --asset-id EA-20261022-08",
       "exit_code": 0,
       "summary": "✅ record EA-20261022-08 完整且审批绑定当前内容（EA-20261022-08-bist-scan-same-cycle-rule.md）"
+    },
+    {
+      "command": "python -X utf8 tests/consumer_check.py",
+      "exit_code": 0,
+      "summary": "consumer_check 按下游加载方式读取 artifact，identity/provenance/触发样例通过"
     }
   ],
   "artifact_sha256": {
-    "rule-bist-scan-same-cycle.md": "8625ff41a2c7704a0195581c26d14841e1cd06d98603231310ede61787fc2b45"
+    "rule-bist-scan-same-cycle.md": "f2bc27e8934a1705b0ca9a4db1ff414d964d3ff94c90ceafd88d754bdc3242e2"
+  },
+  "source_record_sha256": "7a29a53589f9a61a3bb92568eb7a56335a8139d1418d71c0ee549066837895a1",
+  "source_content_sha256": "266ec551dc26561212196dd2f3aeb7fdb790346703c54bf9fadb00d209f874f3",
+  "consumer_test": {
+    "command": "python -X utf8 tests/consumer_check.py",
+    "exit_code": 0,
+    "executed_at": "2026-10-24T18:31:24+0800",
+    "evidence_path": "tests/consumer-test.log",
+    "evidence_sha256": "c2455a7ab85561ad30fc27f9b04cfade77d98ac6443134341578555747fcada2"
   }
 }

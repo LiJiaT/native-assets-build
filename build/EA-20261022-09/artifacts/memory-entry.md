@@ -12,6 +12,7 @@ provenance_status: synthetic
 provenance_note: 由构造的 HBM3E DFT 会议纪要生成，仅用于验证资产化流程，不代表真实项目结论
 release_channel: test-only
 source_record: assets/20261022-1705-hbm3e-dft-meeting/EA-20261022-09-stack-level-repair-decision.md
+asset_type: memory
 ---
 **背景**：HBM3E 堆叠 die 的 MBIST 修复覆盖率上不去，团队就修复动作放在哪一层发生争论——是由 controller 统一控制各 die 的修复资源，还是把修复下沉到 stack 内部完成。当时的环境前提是 V0.9 工具链（`bist_collars` 数量受限）、TSV 通道 repair 仅 2 个 spare row、PHY 侧修复粒度 1:4。
 
