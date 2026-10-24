@@ -19,6 +19,34 @@ PKG_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_VALIDATOR = Path(__file__).resolve().parents[2] / "ai-native-basic-component/skills/asset-ai-ize/scripts/validate_build.py"
 
 
+def body_after_frontmatter(text):
+    if text.startswith("---"):
+        parts = text.split("---", 2)
+        if len(parts) > 2:
+            return parts[2].strip()
+    return text.strip()
+
+
+def check_final_rules():
+    """最终 rules 必须与其来源实现产物的正文完全一致，防止旧副本回流。"""
+    failed = 0
+    for rule in sorted((PKG_ROOT / "rules").glob("*.md")):
+        matches = sorted((PKG_ROOT / "build").glob(f"*/artifacts/rule-{rule.stem}.md"))
+        if not matches:
+            print(f"FAIL rule      {rule.name}: 找不到对应实现产物")
+            failed += 1
+            continue
+        expected = body_after_frontmatter(rule.read_text(encoding="utf-8"))
+        for artifact in matches:
+            actual = body_after_frontmatter(artifact.read_text(encoding="utf-8"))
+            if actual != expected:
+                print(f"FAIL rule      {rule.name} != {artifact.parent.parent.name}/artifacts/{artifact.name}")
+                failed += 1
+            else:
+                print(f"OK  rule      {rule.name} == {artifact.parent.parent.name}")
+    return failed
+
+
 def run(validator, build, assets, release):
     cmd = [sys.executable, "-X", "utf8", str(validator), str(build),
            "--assets-repo", str(assets)]
@@ -65,10 +93,11 @@ def main():
                 failed += 1
             else:
                 print(f"OK  release   {build.name}: test-only 包按预期拒绝")
+    failed += check_final_rules()
     if failed:
         print(f"✗ {failed} 项失败")
         return 1
-    print("✅ 所有实现包结构/发布边界通过")
+    print("✅ 所有实现包结构/发布边界与最终规则一致性通过")
     return 0
 
 
