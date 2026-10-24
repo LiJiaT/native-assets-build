@@ -48,6 +48,6 @@
       "note": "tests/consumer_check.py 以消费者方式加载 artifact，证据见 tests/consumer-test.log"
     }
   ],
-  "source_record_sha256": "907b91119ec1e9a67dd25f950bec0ba7b20abc7f71f7afc411c067f122b84a18",
-  "source_content_sha256": "54fe3ab87812b9da1689b7c563f823659b7e70660329d119dc6613ce4f5705bc"
+  "source_record_sha256": "296b5079aa3428ff202bd99a5fc54ee1e6e2f7dde5e4686182cbb6f73dc70016",
+  "source_content_sha256": "f74b537efdb8a97d941708518129d93542772ff6e95affaa259e57f8eafa6825"
 }

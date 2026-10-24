@@ -30,10 +30,10 @@
   "asset_type": "rule",
   "projects": [],
   "provenance_status": "source-excerpt",
-  "provenance_note": "摘自《AI 公共规范（v0.7 草案）》revision 5267 的强制规则清单（原记录写 v0.5，2026-10-24 对齐当前基线），未逐条对照规范全文核验。",
+  "provenance_note": "摘自《AI 公共规范（v0.7 草案）》revision 5281 的强制规则清单；2026-10-24 复审后由 owner 将完成判定修正为“执行方自查与独立复核同时满足”，未逐条对照规范全文核验。",
   "release_channel": "component-library",
-  "source_record_sha256": "907b91119ec1e9a67dd25f950bec0ba7b20abc7f71f7afc411c067f122b84a18",
-  "source_content_sha256": "54fe3ab87812b9da1689b7c563f823659b7e70660329d119dc6613ce4f5705bc",
+  "source_record_sha256": "296b5079aa3428ff202bd99a5fc54ee1e6e2f7dde5e4686182cbb6f73dc70016",
+  "source_content_sha256": "f74b537efdb8a97d941708518129d93542772ff6e95affaa259e57f8eafa6825",
   "producer": "AI 平台团队",
   "generated_by": "manual authoring + validate_build.py schema v2 metadata backfill (2026-10-24)",
   "review": {
@@ -45,5 +45,6 @@
     "approval_ref": "reviews/20261022-1705-ai-public-rules.md",
     "binding": "owner approval 2026-10-22/23; content-bound retroactively 2026-10-24"
   },
-  "domains": []
+  "domains": [],
+  "source_revision": "5281"
 }

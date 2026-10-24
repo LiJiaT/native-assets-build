@@ -45,5 +45,6 @@
     "approval_ref": "reviews/20261022-1705-ai-public-rules.md",
     "binding": "owner approval 2026-10-22/23; content-bound retroactively 2026-10-24"
   },
-  "domains": []
+  "domains": [],
+  "source_revision": "5267"
 }

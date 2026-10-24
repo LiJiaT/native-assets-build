@@ -25,13 +25,15 @@
   "artifact_sha256": {
     "rule-verify-or-review-before-delivery.md": "065bf8691f20948df9443cf9734862e06679c36fb765866482ef08a8a66b3ab2"
   },
-  "source_record_sha256": "907b91119ec1e9a67dd25f950bec0ba7b20abc7f71f7afc411c067f122b84a18",
-  "source_content_sha256": "54fe3ab87812b9da1689b7c563f823659b7e70660329d119dc6613ce4f5705bc",
+  "source_record_sha256": "296b5079aa3428ff202bd99a5fc54ee1e6e2f7dde5e4686182cbb6f73dc70016",
+  "source_content_sha256": "f74b537efdb8a97d941708518129d93542772ff6e95affaa259e57f8eafa6825",
   "consumer_test": {
     "command": "python -X utf8 tests/consumer_check.py",
     "exit_code": 0,
     "executed_at": "2026-10-24T18:31:24+0800",
     "evidence_path": "tests/consumer-test.log",
-    "evidence_sha256": "8fbe5cd92f420dcea3d4ca15bf6aa1e1996a27cdc29a1e98ae831b18364c4af3"
+    "evidence_sha256": "8fbe5cd92f420dcea3d4ca15bf6aa1e1996a27cdc29a1e98ae831b18364c4af3",
+    "script_path": "tests/consumer_check.py",
+    "script_sha256": "878bea6804f2a1b0942b2167f24f89fe9b8880318c0f6ef3a7ce9f89e59260ce"
   }
 }

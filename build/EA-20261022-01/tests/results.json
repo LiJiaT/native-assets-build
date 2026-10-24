@@ -32,6 +32,8 @@
     "exit_code": 0,
     "executed_at": "2026-10-24T18:31:24+0800",
     "evidence_path": "tests/consumer-test.log",
-    "evidence_sha256": "aa21da8d91f1d4709d59957698d7054a1ee78d194b35e38870adbc01969167fc"
+    "evidence_sha256": "aa21da8d91f1d4709d59957698d7054a1ee78d194b35e38870adbc01969167fc",
+    "script_path": "tests/consumer_check.py",
+    "script_sha256": "878bea6804f2a1b0942b2167f24f89fe9b8880318c0f6ef3a7ce9f89e59260ce"
   }
 }

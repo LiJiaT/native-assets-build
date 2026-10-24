@@ -2,7 +2,7 @@
 
 技能 B「资产AI化」的实现落地仓库。存放公共 **skill / rule / hook / prompt**、组件实现与测试。
 
-对应规范：《AI Native 工程规范》§3.4（飞书文档 `SlsGd0bKQo6pVNxxxNAcrF1tnIg`）。上游依赖：[eng-knowledge-assets](https://github.com/LiJiaT/eng-knowledge-assets)（approved asset record 的唯一来源）。
+对应规范：《AI 公共规范》§2.4（资产化落地）（飞书文档 `SlsGd0bKQo6pVNxxxNAcrF1tnIg`）。上游依赖：[eng-knowledge-assets](https://github.com/LiJiaT/eng-knowledge-assets)（approved asset record 的唯一来源）。
 
 ## 链路位置
 
