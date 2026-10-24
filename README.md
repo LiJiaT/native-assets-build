@@ -37,6 +37,22 @@ reviews/       # 实现评审记录
 3. 以本 repo 的 [实现申请 issue 模板](.github/ISSUE_TEMPLATE/implementation-request.md) 提交申请，附 implementation package（implementation.md、build-manifest.json、artifacts、tests、review 清单、install 说明）；
 4. **组件 owner 评审通过后**才安装或合入；不自动发布到公共目录。技能不得自行关闭 issue、批准 PR 或合并。评审接口与拒绝返回见 [review-contract](https://github.com/LiJiaT/ai-native-basic-component/blob/main/skills/asset-ai-ize/references/review-contract.md)。
 
+## CI
+
+`.github/workflows/validate-builds.yml` 在 push/PR 时执行跨仓校验：
+
+1. 用 repo secret `CROSS_REPO_TOKEN`（只需对 `eng-knowledge-assets` 与 `ai-native-basic-component` 的只读权限）checkout K/G；
+2. 运行 `scripts/validate_packages.py`（结构层 + 发布层 + 最终规则正文一致）；
+3. 运行 `scripts/verify_distribution.py`（G 分发副本的 record/channel/artifact hash/revision/转换说明）。
+
+未配置 secret 时 workflow 在检查步骤失败（fail-closed），不会跳过校验后显示成功。本地等价命令：
+
+```bash
+python -X utf8 scripts/validate_packages.py --assets-repo ../eng-knowledge-assets
+python -X utf8 scripts/verify_distribution.py --rules-repo ../ai-native-basic-component \
+  --assets-repo ../eng-knowledge-assets
+```
+
 ## 当前状态（2026-10-24）
 
 - 9 个 build 包全部升级到 `build-manifest.json` schema v2，携带 `provenance_status`、`release_channel`、`install_target`、record 文件 hash 与不可变正文 hash。
