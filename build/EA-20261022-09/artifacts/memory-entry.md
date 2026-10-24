@@ -8,8 +8,11 @@ domains:
 - DFT
 - 设计
 approved_date: '2026-10-22'
+provenance_status: synthetic
+provenance_note: 由构造的 HBM3E DFT 会议纪要生成，仅用于验证资产化流程，不代表真实项目结论
+release_channel: test-only
+source_record: assets/20261022-1705-hbm3e-dft-meeting/EA-20261022-09-stack-level-repair-decision.md
 ---
-
 **背景**：HBM3E 堆叠 die 的 MBIST 修复覆盖率上不去，团队就修复动作放在哪一层发生争论——是由 controller 统一控制各 die 的修复资源，还是把修复下沉到 stack 内部完成。当时的环境前提是 V0.9 工具链（`bist_collars` 数量受限）、TSV 通道 repair 仅 2 个 spare row、PHY 侧修复粒度 1:4。
 
 **选项与取舍**：方案 A 为 controller-level repair，由 controller 统一控制堆叠各 die 的修复资源，测试入口单一、控制集中；方案 B 为 stack-level repair，修复在 stack 内部完成，controller 只发起测试。最终选方案 B，判断依据三条：其一，可达性——PHY 侧 spare row 在 controller level 无法访问，方案 A 触达不到这部分修复资源，PHY 侧可修复单元形成覆盖率天花板，方案 A 在结构上就不成立；其二，协议一致性——stack-level 与 base die 的测试协议一致，不需要为 repair 额外引入一套跨层控制协议；其三，既有证据——此前 HBM3 项目走过 stack-level 这条路，修复覆盖率达到 98%+。放弃的是 controller-level 的集中控制与单一测试入口，换来的是对 PHY 侧 spare row 的真实可达性，以及与 base die 测试协议的一致性。

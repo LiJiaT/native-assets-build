@@ -1,4 +1,10 @@
+# TEST ONLY — synthetic 流程样例
+
+> 本包仅用于流程验证，**不得安装到生产环境**。已从生产安装点撤出；组件实体移入 `samples/synthetic/`。
+
 # 安装说明 · hbm3e-dft-env-baseline（EA-20261022-07）
+
+- install_target: `test-sandbox`；release_channel: `test-only`
 
 > 本包**未安装**。安装须经组件 owner 评审（`review.md`）通过后由人执行；技能 B 不执行安装，不写项目 memory 目录。
 > 命令在 `eng-asset-ai-components` 仓库根目录执行（Git Bash / macOS 通用）。

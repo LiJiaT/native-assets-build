@@ -6,20 +6,42 @@
   "title": "资产分类体系定为 9 领域平铺 + 2 项目正交",
   "owner": "AI 平台团队",
   "layer": "公共级",
-  "project": "无",
   "domains": [],
   "build_date": "2026-10-22",
   "artifacts": [
     "memory-entry.md"
   ],
   "tests": [
-    "independent-check.md"
+    "independent-check.md",
+    "results.json"
   ],
   "source_record": "assets/20261022-1705-decision-domain-taxonomy/EA-20261022-01-asset-domain-taxonomy.md",
-  "install_target": "~/.claude/CLAUDE.md 受管区块（推荐）或 ~/.claude/projects/<project-slug>/memory/asset-taxonomy.md（项目级降级）",
+  "install_target": "user-global",
   "validation": {
-    "validator": "asset-ai-ize/scripts/validate_build.py",
-    "assets_repo": "D:/Project/eng-knowledge-assets",
-    "result": "pass"
+    "validator": "skills/asset-ai-ize/scripts/validate_build.py",
+    "schema_version": "2",
+    "mode": "structure",
+    "result": "pass",
+    "validated_at": "2026-10-24"
+  },
+  "schema_version": "2",
+  "package_version": "1.0.0",
+  "asset_type": "memory",
+  "projects": [],
+  "provenance_status": "source-excerpt",
+  "provenance_note": "2026-10-22 资产化体系设计决策的摘要；正文中的 v0.5 为决策时点版本，当前对应《AI 公共规范（v0.7 草案）》revision 5267 的 1.2 节。原始记录未在仓库留存，暂保持 source-excerpt。",
+  "release_channel": "component-library",
+  "source_record_sha256": "2004cbe179c709181c10b94b4ad8d892c7c4d596e0a7e4f1f668b2d08deae689",
+  "source_content_sha256": "e113accb5e0d77ecde827ecbdbf4eb3796fe3208601e372ee6e2f44027702b24",
+  "producer": "AI 平台团队",
+  "generated_by": "manual authoring + validate_build.py schema v2 metadata backfill (2026-10-24)",
+  "review": {
+    "file": "review.md",
+    "reviewer": "LiJiaT",
+    "reviewer_role": "asset owner",
+    "decision": "approved",
+    "reviewed_at": "2026-10-24",
+    "approval_ref": "reviews/20261022-1705-decision-domain-taxonomy.md",
+    "binding": "owner approval 2026-10-22/23; content-bound retroactively 2026-10-24"
   }
 }

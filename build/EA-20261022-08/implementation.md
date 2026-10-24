@@ -1,3 +1,7 @@
+# TEST ONLY — synthetic 流程样例
+
+> 本包由构造材料生成，仅用于验证 A/B 流程；**不得作为真实工程结论，也不得安装到生产环境**。已从生产安装点撤出，最终组件在 `samples/synthetic/`。
+
 # 实现说明 · EA-20261022-08 · bist_en 与 scan_en 禁止同周期拉高
 
 | 项 | 值 |
@@ -26,7 +30,7 @@ statement 的每条结论逐条落到 artifact，未增删语义。
 ## 设计取舍
 
 1. **未加 `paths:`**：record 的生效条件是"OCC 窗口内并存 repair/MBIST 时钟与 scan 时钟的 DFT 设计"，属设计范围而非文件类型；若硬加 `paths: ["**/*.sdc"]` 会漏掉波形检查与约束评审场景（第 4 条结论），造成语义收窄。故适用范围由「## 适用范围」节按设计条件判定，`install.md` 另注明项目本地可按需自定义 `paths`，但那是项目定制、需单独裁决。
-2. **安装建议项目级**：规则为领域级且 project 记录为 HBM，建议落到 DFT 项目的 `.claude/rules/`，避免在无 DFT 工作的会话中加载；用户级仅作为跨项目备选（见 `install.md`）。
+2. **安装范围（synthetic 状态）**：本包仅 `test-only`，不提供生产安装范围。若未来转为真实资产，由 owner 在"项目级 `.claude/rules/`（推荐，避免无 DFT 工作的会话加载）"与"用户级 + 领域适用范围"之间**选定唯一目标**，并同步 manifest/implementation/install/review/rollback；不得同时保留两套推荐。
 3. **副标签（知识库）处理**：「违反后果」节承载"为什么不能同周期"的机理知识，供规则解释与培训引用；按主形态 Rule 实现，不另造 memory 组件（技能 B 的"主形态实现、副标签挂接建议写在 implementation.md"口径）。
 4. **不扩写时序方案**：record 未给出具体 OCC 时序实现方式（如切换周期数、握手信号），artifact 不发明方案，只规定判定口径与必检项，避免演绎。
 5. **去重扫描**：`~/.claude/rules/` 现有 4 条与 `eng-asset-ai-components/rules/` 均无 DFT/MBIST/scan 时序互斥内容，无重复实现。

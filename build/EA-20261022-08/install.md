@@ -1,4 +1,10 @@
+# TEST ONLY — synthetic 流程样例
+
+> 本包仅用于流程验证，**不得安装到生产环境**。已从生产安装点撤出；组件实体移入 `samples/synthetic/`。
+
 # 安装说明 · bist-scan-same-cycle-exclusion（EA-20261022-08）
+
+- install_target: `test-sandbox`；release_channel: `test-only`
 
 > 本包**未安装**。安装须经组件 owner（DFT 领域 owner）评审通过后由人执行；技能 B 不执行安装。
 > 命令在 `eng-asset-ai-components` 仓库根目录执行（Git Bash / macOS 通用）。

@@ -3,8 +3,11 @@ name: verify-or-review-before-delivery
 description: 任何产出交付前必须完成验证或评审（至少其一）：执行方按验收清单逐项自查加独立复核，无法验证时转为评审
 asset_id: EA-20261022-04
 ai_form: Rule
+provenance_status: source-excerpt
+provenance_note: 摘自《AI 公共规范（v0.5 草案）》4.4 节，未逐条对照规范全文核验
+release_channel: component-library
+source_record: assets/20261022-1705-ai-public-rules/EA-20261022-04-verify-or-review-before-delivery.md
 ---
-
 # 产出交付前验证或评审
 
 ## 规则

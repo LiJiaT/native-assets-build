@@ -4,9 +4,12 @@ description: 模块内 Verilog 文件新增或更新时，在同一次变更中�
 asset_id: EA-20261022-02
 ai_form: Rule
 paths:
-  - "**/*.v"
+- '**/*.v'
+provenance_status: source-excerpt
+provenance_note: 摘自《AI 公共规范（v0.5 草案）》4.4 节，未逐条对照规范全文核验
+release_channel: component-library
+source_record: assets/20261022-1705-ai-public-rules/EA-20261022-02-filelist-sync.md
 ---
-
 # Verilog 文件变更同步 filelist
 
 ## 规则

@@ -1,0 +1,23 @@
+{
+  "schema_version": "1",
+  "asset_id": "EA-20261022-06",
+  "result": "pass",
+  "tested_at": "2026-10-24T08:51:17+0800",
+  "tested_by": "Claude Code (AI assistant), owner-authorized 2026-10-24",
+  "scope": "deterministic structure/record/scope/artifact checks; 语义有效性由 owner 复核",
+  "commands": [
+    {
+      "command": "C:\\Users\\jie.li\\AppData\\Local\\Programs\\Python\\Python314\\python.exe -X utf8 D:\\Project\\ai-native-basic-component\\skills\\asset-ai-ize\\scripts\\validate_build.py build\\EA-20261022-06 --assets-repo D:\\Project\\eng-knowledge-assets",
+      "exit_code": 0,
+      "summary": "[validate_build] ✅ 校验通过（结构层）"
+    },
+    {
+      "command": "C:\\Users\\jie.li\\AppData\\Local\\Programs\\Python\\Python314\\python.exe -X utf8 D:\\Project\\ai-native-basic-component\\gates\\gate.py record --assets-repo D:\\Project\\eng-knowledge-assets --asset-id EA-20261022-06",
+      "exit_code": 0,
+      "summary": "✅ record EA-20261022-06 完整且审批绑定当前内容（EA-20261022-06-no-raw-records-in-memory.md）"
+    }
+  ],
+  "artifact_sha256": {
+    "rule-no-raw-records-in-memory.md": "16c0be4ac24e32044246520a317f3057b50c59b929c6c7a702381a6375d233f0"
+  }
+}

@@ -6,19 +6,42 @@
   "title": "Verilog 文件变更必须同步 filelist",
   "owner": "AI 平台团队",
   "layer": "公共级",
-  "project": "无",
   "build_date": "2026-10-22",
   "artifacts": [
     "rule-verilog-filelist-sync.md"
   ],
   "tests": [
-    "trigger-cases.md"
+    "trigger-cases.md",
+    "results.json"
   ],
   "source_record": "assets/20261022-1705-ai-public-rules/EA-20261022-02-filelist-sync.md",
-  "install_target": "~/.claude/rules/verilog-filelist-sync.md",
+  "install_target": "user-global",
   "validation": {
-    "validator": "asset-ai-ize/scripts/validate_build.py",
-    "assets_repo": "D:/Project/eng-knowledge-assets",
-    "result": "pass"
-  }
+    "validator": "skills/asset-ai-ize/scripts/validate_build.py",
+    "schema_version": "2",
+    "mode": "structure",
+    "result": "pass",
+    "validated_at": "2026-10-24"
+  },
+  "schema_version": "2",
+  "package_version": "1.0.0",
+  "asset_type": "rule",
+  "projects": [],
+  "provenance_status": "source-excerpt",
+  "provenance_note": "摘自《AI 公共规范（v0.7 草案）》revision 5267 的强制规则清单（原记录写 v0.5，2026-10-24 对齐当前基线），未逐条对照规范全文核验。",
+  "release_channel": "component-library",
+  "source_record_sha256": "de66851781486090f58a9e3b19a6fc6b06b969a6206655a9cefa3951c9be22cb",
+  "source_content_sha256": "cd505ca76c1c3b7c8b4a08145302172bae67e21497880ddda86d99875aac1819",
+  "producer": "AI 平台团队",
+  "generated_by": "manual authoring + validate_build.py schema v2 metadata backfill (2026-10-24)",
+  "review": {
+    "file": "review.md",
+    "reviewer": "LiJiaT",
+    "reviewer_role": "asset owner",
+    "decision": "approved",
+    "reviewed_at": "2026-10-24",
+    "approval_ref": "reviews/20261022-1705-ai-public-rules.md",
+    "binding": "owner approval 2026-10-22/23; content-bound retroactively 2026-10-24"
+  },
+  "domains": []
 }

@@ -1,10 +1,14 @@
 ---
 name: bist-scan-same-cycle-exclusion
-description: 在同时含 MBIST(bist) 与 scan 的 DFT 时序约束中，bist_en 与 scan_en 不得同周期拉高，必须周期级互斥；在 OCC 使能窗口内逐条检查
+description: 在同时含 MBIST(bist) 与 scan 的 DFT 时序约束中，bist_en 与 scan_en 不得同周期拉高，必须周期级互斥；在
+  OCC 使能窗口内逐条检查
 asset_id: EA-20261022-08
 ai_form: Rule
+provenance_status: synthetic
+provenance_note: 由构造的 HBM3E DFT 会议纪要生成，仅用于验证资产化流程，不代表真实项目结论
+release_channel: test-only
+source_record: assets/20261022-1705-hbm3e-dft-meeting/EA-20261022-08-bist-scan-same-cycle-rule.md
 ---
-
 # bist_en 与 scan_en 禁止同周期拉高
 
 ## 规则

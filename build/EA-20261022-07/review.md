@@ -1,3 +1,7 @@
+# TEST ONLY — synthetic 流程样例
+
+> 本包由构造材料生成，仅用于验证 A/B 流程；**不得作为真实工程结论，也不得安装到生产环境**。已从生产安装点撤出，最终组件在 `samples/synthetic/`。
+
 # 组件 owner 评审清单 · EA-20261022-07（Memory）
 
 - 评审对象：`build/EA-20261022-07/`（HBM 项目 memory 条目 `hbm3e-dft-env-baseline.md`）

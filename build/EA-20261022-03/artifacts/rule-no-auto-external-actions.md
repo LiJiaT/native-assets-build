@@ -3,8 +3,11 @@ name: no-auto-external-actions
 description: AI 不自动执行对外上传、推送、提交、发布或外发；对外动作一律由人确认后执行，且不得绕过权限与 hook 拦截
 asset_id: EA-20261022-03
 ai_form: Rule
+provenance_status: source-excerpt
+provenance_note: 摘自《AI 公共规范（v0.5 草案）》4.4 节，未逐条对照规范全文核验
+release_channel: component-library
+source_record: assets/20261022-1705-ai-public-rules/EA-20261022-03-no-auto-external-actions.md
 ---
-
 # 对外动作必须由人确认后执行
 
 ## 规则

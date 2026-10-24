@@ -3,8 +3,11 @@ name: no-raw-records-in-memory
 description: 不把原始记录（会议原文、聊天记录、调试日志、命令输出、临时文件内容）写入长期记忆；长期记忆只写提炼后的结论并注明出处，便于回溯
 asset_id: EA-20261022-06
 ai_form: Rule
+provenance_status: source-excerpt
+provenance_note: 摘自《AI 公共规范（v0.5 草案）》4.4 节，未逐条对照规范全文核验
+release_channel: component-library
+source_record: assets/20261022-1705-ai-public-rules/EA-20261022-06-no-raw-records-in-memory.md
 ---
-
 # 原始记录不得写入长期记忆
 
 ## 规则

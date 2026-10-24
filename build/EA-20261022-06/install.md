@@ -1,5 +1,7 @@
 # 安装说明 · no-raw-records-in-memory（EA-20261022-06）
 
+- install_target: `user-global`；release_channel: `component-library`
+
 > 本包**未安装**。安装须经组件 owner 评审通过后由人执行；技能 B 不执行安装。
 > 命令在 `eng-asset-ai-components` 仓库根目录执行（Git Bash / macOS 通用）。
 

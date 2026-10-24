@@ -3,8 +3,11 @@ name: subtask-acceptance-checklist
 description: 向下游执行方下发的每个子任务必须携带验收清单（交付物、通过条件、验证方式），缺失则不得下发也不得执行，执行方应退回补全
 asset_id: EA-20261022-05
 ai_form: Rule
+provenance_status: source-excerpt
+provenance_note: 摘自《AI 公共规范（v0.5 草案）》4.4 节，未逐条对照规范全文核验
+release_channel: component-library
+source_record: assets/20261022-1705-ai-public-rules/EA-20261022-05-subtask-acceptance-checklist.md
 ---
-
 # 子任务必须携带可逐项判定的验收清单
 
 ## 规则

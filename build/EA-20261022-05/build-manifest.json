@@ -6,19 +6,42 @@
   "title": "子任务必须携带可逐项判定的验收清单",
   "owner": "AI 平台团队",
   "layer": "公共级",
-  "project": "无",
   "build_date": "2026-10-22",
   "artifacts": [
     "rule-subtask-acceptance-checklist.md"
   ],
   "tests": [
-    "trigger-cases.md"
+    "trigger-cases.md",
+    "results.json"
   ],
   "source_record": "assets/20261022-1705-ai-public-rules/EA-20261022-05-subtask-acceptance-checklist.md",
-  "install_target": "~/.claude/rules/subtask-acceptance-checklist.md",
+  "install_target": "user-global",
   "validation": {
-    "validator": "asset-ai-ize/scripts/validate_build.py",
-    "assets_repo": "D:/Project/eng-knowledge-assets",
-    "result": "pass"
-  }
+    "validator": "skills/asset-ai-ize/scripts/validate_build.py",
+    "schema_version": "2",
+    "mode": "structure",
+    "result": "pass",
+    "validated_at": "2026-10-24"
+  },
+  "schema_version": "2",
+  "package_version": "1.0.0",
+  "asset_type": "rule",
+  "projects": [],
+  "provenance_status": "source-excerpt",
+  "provenance_note": "摘自《AI 公共规范（v0.7 草案）》revision 5267 的强制规则清单（原记录写 v0.5，2026-10-24 对齐当前基线），未逐条对照规范全文核验。",
+  "release_channel": "component-library",
+  "source_record_sha256": "dfa98262b3ee6d1658c2cecb13ef32d6ccc86353085cabc38c67d4a37df0bedd",
+  "source_content_sha256": "629dfb4db23b56ec638c9bf079423523492add01d463374c7b2a719050ba1a6e",
+  "producer": "AI 平台团队",
+  "generated_by": "manual authoring + validate_build.py schema v2 metadata backfill (2026-10-24)",
+  "review": {
+    "file": "review.md",
+    "reviewer": "LiJiaT",
+    "reviewer_role": "asset owner",
+    "decision": "approved",
+    "reviewed_at": "2026-10-24",
+    "approval_ref": "reviews/20261022-1705-ai-public-rules.md",
+    "binding": "owner approval 2026-10-22/23; content-bound retroactively 2026-10-24"
+  },
+  "domains": []
 }

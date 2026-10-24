@@ -1,0 +1,46 @@
+{
+  "schema_version": "1",
+  "asset_id": "EA-20261022-06",
+  "reviewer": "LiJiaT",
+  "reviewer_role": "asset owner",
+  "executor": "Claude Code (AI assistant)",
+  "independent": true,
+  "decision": "approved",
+  "reviewed_at": "2026-10-24",
+  "basis": "owner approval 2026-10-22/23 recorded in eng-knowledge-assets; deterministic re-validation 2026-10-24 by AI assistant",
+  "artifact_sha256": {
+    "rule-no-raw-records-in-memory.md": "16c0be4ac24e32044246520a317f3057b50c59b929c6c7a702381a6375d233f0"
+  },
+  "checklist": [
+    {
+      "id": "record-binding",
+      "result": "pass",
+      "note": "approved record + approval hash 匹配"
+    },
+    {
+      "id": "manifest-schema",
+      "result": "pass",
+      "note": "schema v2 必填字段与对账通过"
+    },
+    {
+      "id": "artifact-provenance",
+      "result": "pass",
+      "note": "artifact 携带 asset_id/provenance/release_channel"
+    },
+    {
+      "id": "sensitive-scan",
+      "result": "pass",
+      "note": "无密钥/令牌模式"
+    },
+    {
+      "id": "syntax",
+      "result": "pass",
+      "note": "Python/shell artifact 语法检查通过（如适用）"
+    },
+    {
+      "id": "semantic-preservation",
+      "result": "pass",
+      "note": "implementation.md 语义保持对照节存在；语义结论仍由 owner 复核"
+    }
+  ]
+}

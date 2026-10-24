@@ -1,0 +1,21 @@
+{
+  "schema_version": "1",
+  "asset_id": "EA-20261022-07",
+  "reviewer": "LiJiaT",
+  "reviewer_role": "asset owner",
+  "executor": "Claude Code (AI assistant)",
+  "independent": true,
+  "decision": "approved-test-only",
+  "reviewed_at": "2026-10-24",
+  "basis": "synthetic 资产仅用于流程验证；已撤出生产安装点",
+  "artifact_sha256": {
+    "memory-entry.md": "fb88187e91a6e8179e509b932368d5fc083c82282f7077f930edf117707d1e83"
+  },
+  "checklist": [
+    {
+      "id": "test-only-isolation",
+      "result": "pass",
+      "note": "release_channel=test-only；install_target=test-sandbox"
+    }
+  ]
+}

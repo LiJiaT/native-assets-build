@@ -1,3 +1,7 @@
+# TEST ONLY — synthetic 流程样例
+
+> 本包由构造材料生成，仅用于验证 A/B 流程；**不得作为真实工程结论，也不得安装到生产环境**。已从生产安装点撤出，最终组件在 `samples/synthetic/`。
+
 # 组件评审清单 · bist-scan-same-cycle-exclusion（EA-20261022-08）
 
 > 供组件 owner 评审使用。全部勾选且结论为"通过"后，方可合入 `rules/` 并按 `install.md` 安装。

@@ -1,5 +1,7 @@
 # 安装说明 · no-auto-external-actions（EA-20261022-03）
 
+- install_target: `user-global`；release_channel: `component-library`
+
 > 本包**未安装**。安装须经组件 owner 评审通过后由人执行；技能 B 不执行安装、不改权限配置。
 > 命令在 `eng-asset-ai-components` 仓库根目录执行（Git Bash / macOS 通用）。
 

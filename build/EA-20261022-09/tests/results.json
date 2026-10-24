@@ -1,0 +1,23 @@
+{
+  "schema_version": "1",
+  "asset_id": "EA-20261022-09",
+  "result": "pass",
+  "tested_at": "2026-10-24T08:51:18+0800",
+  "tested_by": "Claude Code (AI assistant), owner-authorized 2026-10-24",
+  "scope": "deterministic structure/record/scope/artifact checks; 语义有效性由 owner 复核",
+  "commands": [
+    {
+      "command": "C:\\Users\\jie.li\\AppData\\Local\\Programs\\Python\\Python314\\python.exe -X utf8 D:\\Project\\ai-native-basic-component\\skills\\asset-ai-ize\\scripts\\validate_build.py build\\EA-20261022-09 --assets-repo D:\\Project\\eng-knowledge-assets",
+      "exit_code": 0,
+      "summary": "[validate_build] ✅ 校验通过（结构层）"
+    },
+    {
+      "command": "C:\\Users\\jie.li\\AppData\\Local\\Programs\\Python\\Python314\\python.exe -X utf8 D:\\Project\\ai-native-basic-component\\gates\\gate.py record --assets-repo D:\\Project\\eng-knowledge-assets --asset-id EA-20261022-09",
+      "exit_code": 0,
+      "summary": "✅ record EA-20261022-09 完整且审批绑定当前内容（EA-20261022-09-stack-level-repair-decision.md）"
+    }
+  ],
+  "artifact_sha256": {
+    "memory-entry.md": "f94a9905e2217e3151419663805b8b1a0086148913abb0a28203670d2e7b48bf"
+  }
+}

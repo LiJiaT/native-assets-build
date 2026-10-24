@@ -6,7 +6,6 @@
   "title": "HBM3E 修复层级决策：选 stack-level",
   "owner": "DFT 领域 owner",
   "layer": "领域级",
-  "project": "HBM",
   "domains": [
     "DFT",
     "设计"
@@ -16,13 +15,39 @@
     "memory-entry.md"
   ],
   "tests": [
-    "independent-check.md"
+    "independent-check.md",
+    "results.json"
   ],
   "source_record": "assets/20261022-1705-hbm3e-dft-meeting/EA-20261022-09-stack-level-repair-decision.md",
-  "install_target": "~/.claude/projects/<project-slug>/memory/hbm3e-stack-level-repair-decision.md（领域级载体由 owner 指定，不自建 ~/.claude/memory/domains/）",
+  "install_target": "test-sandbox",
   "validation": {
-    "validator": "asset-ai-ize/scripts/validate_build.py",
-    "assets_repo": "D:/Project/eng-knowledge-assets",
-    "result": "pass"
-  }
+    "validator": "skills/asset-ai-ize/scripts/validate_build.py",
+    "schema_version": "2",
+    "mode": "structure",
+    "result": "pass",
+    "validated_at": "2026-10-24"
+  },
+  "schema_version": "2",
+  "package_version": "1.0.0",
+  "asset_type": "memory",
+  "projects": [
+    "HBM"
+  ],
+  "provenance_status": "synthetic",
+  "provenance_note": "由构造的 HBM3E DFT 会议纪要生成，仅用于验证资产化流程，不代表真实项目结论",
+  "release_channel": "test-only",
+  "source_record_sha256": "cb60943e5f0c384557baa2032a103a2c253b53b34619ec922ae53c70a7aa20a6",
+  "source_content_sha256": "b44f13c3587b6d3990bb92e6226796069da40c652d1cc492ab3b3fdc2b96fe99",
+  "producer": "AI 平台团队",
+  "generated_by": "manual authoring + validate_build.py schema v2 metadata backfill (2026-10-24)",
+  "review": {
+    "file": "review.md",
+    "reviewer": "LiJiaT",
+    "reviewer_role": "asset owner",
+    "decision": "approved-test-only",
+    "reviewed_at": "2026-10-24",
+    "approval_ref": "reviews/20261023-domain-relocation.md",
+    "binding": "owner approval 2026-10-22/23; content-bound retroactively 2026-10-24"
+  },
+  "package_path": "samples/synthetic/hbm3e-stack-level-repair-decision.md"
 }
