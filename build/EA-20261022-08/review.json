@@ -9,7 +9,7 @@
   "reviewed_at": "2026-10-24",
   "basis": "synthetic 资产仅用于流程验证；已撤出生产安装点",
   "artifact_sha256": {
-    "rule-bist-scan-same-cycle.md": "04f87b58179aad1f3da10c5ed9151430d451e462c4d5c950df0191a50418bc90"
+    "rule-bist-scan-same-cycle.md": "8625ff41a2c7704a0195581c26d14841e1cd06d98603231310ede61787fc2b45"
   },
   "checklist": [
     {

@@ -31,7 +31,7 @@
   "provenance_status": "source-excerpt",
   "provenance_note": "2026-10-22 资产化体系设计决策的摘要；正文中的 v0.5 为决策时点版本，当前对应《AI 公共规范（v0.7 草案）》revision 5267 的 1.2 节。原始记录未在仓库留存，暂保持 source-excerpt。",
   "release_channel": "component-library",
-  "source_record_sha256": "2004cbe179c709181c10b94b4ad8d892c7c4d596e0a7e4f1f668b2d08deae689",
+  "source_record_sha256": "fe2c6c1ab0dbe0c1aa1fee05d8026c2817ecd84b4db012b4498eadafb7acde87",
   "source_content_sha256": "e113accb5e0d77ecde827ecbdbf4eb3796fe3208601e372ee6e2f44027702b24",
   "producer": "AI 平台团队",
   "generated_by": "manual authoring + validate_build.py schema v2 metadata backfill (2026-10-24)",

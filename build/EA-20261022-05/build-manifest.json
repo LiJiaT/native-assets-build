@@ -30,7 +30,7 @@
   "provenance_status": "source-excerpt",
   "provenance_note": "摘自《AI 公共规范（v0.7 草案）》revision 5267 的强制规则清单（原记录写 v0.5，2026-10-24 对齐当前基线），未逐条对照规范全文核验。",
   "release_channel": "component-library",
-  "source_record_sha256": "dfa98262b3ee6d1658c2cecb13ef32d6ccc86353085cabc38c67d4a37df0bedd",
+  "source_record_sha256": "07e9c3d586481072b7622ccd5dcbf8720cd9f6656ad32f8a3ff2b30a90387924",
   "source_content_sha256": "629dfb4db23b56ec638c9bf079423523492add01d463374c7b2a719050ba1a6e",
   "producer": "AI 平台团队",
   "generated_by": "manual authoring + validate_build.py schema v2 metadata backfill (2026-10-24)",

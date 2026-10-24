@@ -36,7 +36,7 @@
   "provenance_status": "synthetic",
   "provenance_note": "由构造的 HBM3E DFT 会议纪要生成，仅用于验证资产化流程，不代表真实项目结论",
   "release_channel": "test-only",
-  "source_record_sha256": "234187b016cc8520026c0ff8fea7b6fe300446742c24286613f6b56c07a77d4c",
+  "source_record_sha256": "7a29a53589f9a61a3bb92568eb7a56335a8139d1418d71c0ee549066837895a1",
   "source_content_sha256": "266ec551dc26561212196dd2f3aeb7fdb790346703c54bf9fadb00d209f874f3",
   "producer": "AI 平台团队",
   "generated_by": "manual authoring + validate_build.py schema v2 metadata backfill (2026-10-24)",

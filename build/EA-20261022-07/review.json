@@ -9,7 +9,7 @@
   "reviewed_at": "2026-10-24",
   "basis": "synthetic 资产仅用于流程验证；已撤出生产安装点",
   "artifact_sha256": {
-    "memory-entry.md": "fb88187e91a6e8179e509b932368d5fc083c82282f7077f930edf117707d1e83"
+    "memory-entry.md": "0e089d7f70301056ba6f7666d46ca2308e1ff86c8f8a1619f2c79f379da69a62"
   },
   "checklist": [
     {
