@@ -3,7 +3,7 @@
 - install_target: `user-global`；release_channel: `component-library`
 
 > 本包**未安装**。安装须经组件 owner 评审（`review.md`）通过后由人执行；技能 B 不执行安装，不改 CLAUDE.md、不写 `~/.claude/`。
-> 命令在 `eng-asset-ai-components` 仓库根目录执行（Git Bash / macOS 通用）。
+> 命令在 `native-assets-build` 仓库根目录执行（Git Bash / macOS 通用）。
 
 ## 目标位置（二选一，勿重复安装）
 

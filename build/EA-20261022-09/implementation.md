@@ -10,7 +10,7 @@
 | proposal_id | 20261022-1705-hbm3e-dft-meeting |
 | ai_form | Memory（record 映射结论，未改） |
 | 目标层级 / 领域 / 项目 | 领域级 / DFT、设计 / HBM |
-| record | eng-knowledge-assets `assets/20261022-1705-hbm3e-dft-meeting/EA-20261022-09-stack-level-repair-decision.md`（approved 2026-10-22） |
+| record | native-assets `assets/20261022-1705-hbm3e-dft-meeting/EA-20261022-09-stack-level-repair-decision.md`（approved 2026-10-22） |
 | 组件 owner | DFT 领域 owner（record owner；实际组件 owner 由评审指定） |
 | build 日期 | 2026-10-22 |
 | 实现物 | `artifacts/memory-entry.md` → 建议安装名 `hbm3e-stack-level-repair-decision.md`（DFT 领域级 memory 或 HBM 项目 memory） |
@@ -40,7 +40,7 @@ record 的 statement 为决策记忆结构（背景 / 选项 / 取舍 / 证据 /
 2. **"方案 A 结构上不成立"照原强度保留**：这是取舍的核心结论，弱化为"较难"会改变语义；同样保留"覆盖率天花板"表述。
 3. **环境前提压缩为一句**：V0.9 / 2 个 spare row / 1:4 是决策条件而非本条主体，完整取值保留但不展开机理（机理已在 EA-20261022-07 基线条目中承载，本条引用不复制）。
 4. **副标签不改变主形态**：record 副标签为「工程规则 / 知识库」。其中"可达性优先于控制集中度"若要变成强制规则需另立 Rule、PHY spare row 不可达等机理若要独立成知识库条目需回技能 A 提案；本包只按主形态 Memory 实现，不越权扩展（实现备注，不改资产语义）。
-5. **去重扫描**：DFT 领域级 memory 与 HBM 项目 memory 当前均无条目，`eng-asset-ai-components/components/` 为空；与 EA-07 条目无重叠（EA-07 承载参数事实，本条承载层级决策并引用同一前提）。
+5. **去重扫描**：DFT 领域级 memory 与 HBM 项目 memory 当前均无条目，`native-assets-build/components/` 为空；与 EA-07 条目无重叠（EA-07 承载参数事实，本条承载层级决策并引用同一前提）。
 
 ## 独立成立性检查结果
 
@@ -63,7 +63,7 @@ record 的 statement 为决策记忆结构（背景 / 选项 / 取舍 / 证据 /
 
 ## 校验记录
 
-命令：`python -X utf8 C:\Users\jie.li\.claude\skills\asset-ai-ize\scripts\validate_build.py D:\Project\eng-asset-ai-components\build\EA-20261022-09 --assets-repo D:\Project\eng-knowledge-assets`
+命令：`python -X utf8 C:\Users\jie.li\.claude\skills\asset-ai-ize\scripts\validate_build.py D:\Project\native-assets-build\build\EA-20261022-09 --assets-repo D:\Project\native-assets`
 
 退出码：0。输出末两行：
 

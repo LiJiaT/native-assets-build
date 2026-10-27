@@ -6,7 +6,7 @@
 | proposal_id | 20261022-1705-decision-domain-taxonomy |
 | ai_form | Memory（record 映射结论，未改） |
 | 目标层级 / 领域 / 项目 | 公共级 / 无 / 无 |
-| record | eng-knowledge-assets `assets/20261022-1705-decision-domain-taxonomy/EA-20261022-01-asset-domain-taxonomy.md`（approved 2026-10-22） |
+| record | native-assets `assets/20261022-1705-decision-domain-taxonomy/EA-20261022-01-asset-domain-taxonomy.md`（approved 2026-10-22） |
 | 组件 owner | AI 平台团队（record owner；实际组件 owner 由评审指定） |
 | build 日期 | 2026-10-22 |
 | 实现物 | `artifacts/memory-entry.md` → 建议安装到 `~/.claude/CLAUDE.md` 受管区块（项目 memory 为降级方案） |
@@ -32,7 +32,7 @@ record 的 statement 为决策记忆结构（决策 / 背景 / 选项 / 取舍 /
 2. **只写 statement，不搬 evidence 的推导**：record「出处与理由」中"后续新增领域/项目/维度的提案需以此为基线"属入库理由中的推论，不是 statement 结论，故不写入条目，避免语义增量；若团队要强制该约束，应另立 Rule。
 3. **枚举值完整保留**：9 个领域名与 2 个项目名逐个列出，四维正交用「形态 ⊥ 领域 ⊥ 项目 ⊥ 层级」原式表达——这些是后续资产元数据的合法取值，压缩会损失可执行性。
 4. **frontmatter 只留检索与归属字段**：asset_id / ai_form / title / layer / project / domains / approved_date；provenance 以 HTML 注释置于文末，便于溯源而不干扰条目阅读。
-5. **去重扫描**：`~/.claude/memory/` 目录不存在，`~/.claude/CLAUDE.md` 无领域划分或分类体系相关条目；`eng-asset-ai-components/components/` 为空，无重复组件。本条为资产治理体系的首条分类记忆，无冲突。
+5. **去重扫描**：`~/.claude/memory/` 目录不存在，`~/.claude/CLAUDE.md` 无领域划分或分类体系相关条目；`native-assets-build/components/` 为空，无重复组件。本条为资产治理体系的首条分类记忆，无冲突。
 
 ## 独立成立性检查结果
 
@@ -55,7 +55,7 @@ record 的 statement 为决策记忆结构（决策 / 背景 / 选项 / 取舍 /
 
 ## 校验记录
 
-命令：`python -X utf8 C:\Users\jie.li\.claude\skills\asset-ai-ize\scripts\validate_build.py D:\Project\eng-asset-ai-components\build\EA-20261022-01 --assets-repo D:\Project\eng-knowledge-assets`
+命令：`python -X utf8 C:\Users\jie.li\.claude\skills\asset-ai-ize\scripts\validate_build.py D:\Project\native-assets-build\build\EA-20261022-01 --assets-repo D:\Project\native-assets`
 
 退出码：0。输出末两行：
 

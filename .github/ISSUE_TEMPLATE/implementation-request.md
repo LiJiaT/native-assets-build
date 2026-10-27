@@ -11,7 +11,7 @@ labels: implementation-request
 
 ## 必填字段
 
-- **资产 ID**：（来源 asset record，eng-knowledge-assets 中的 approved record）
+- **资产 ID**：（来源 asset record，native-assets 中的 approved record）
 - **来源提案 ID**：
 - **目标组件形态**：Memory / Rule / Skill / Workflow / Hook / Prompt
 - **目标层级 / 领域 / 项目**：

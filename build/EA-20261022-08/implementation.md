@@ -10,7 +10,7 @@
 | proposal_id | 20261022-1705-hbm3e-dft-meeting |
 | ai_form | Rule（record 映射结论，未改） |
 | 目标层级 / 领域 / 项目 | 领域级 / DFT、时序 / HBM（project 仅记录来源，共享范围按 DFT 领域计） |
-| record | eng-knowledge-assets `assets/20261022-1705-hbm3e-dft-meeting/EA-20261022-08-bist-scan-same-cycle-rule.md`（approved 2026-10-22） |
+| record | native-assets `assets/20261022-1705-hbm3e-dft-meeting/EA-20261022-08-bist-scan-same-cycle-rule.md`（approved 2026-10-22） |
 | 组件 owner | DFT 领域 owner（record owner；实际组件 owner 由评审指定） |
 | build 日期 | 2026-10-22 |
 | 实现物 | `artifacts/rule-bist-scan-same-cycle.md` → 唯一安装点 `~/.claude/test-sandbox/rules/bist-scan-same-cycle-exclusion.md`（test-only） |
@@ -33,7 +33,7 @@ statement 的每条结论逐条落到 artifact，未增删语义。
 2. **安装范围（synthetic 状态）**：本包仅 `test-only` / `test-sandbox`，唯一落点为 `~/.claude/test-sandbox/rules/`，不提供用户级或项目级生产安装命令。若未来转为真实资产，须由 owner 重新批准层级与 release_channel 并生成新实现包，旧 test-only 包不得直接复用。
 3. **副标签（知识库）处理**：「违反后果」节承载"为什么不能同周期"的机理知识，供规则解释与培训引用；按主形态 Rule 实现，不另造 memory 组件（技能 B 的"主形态实现、副标签挂接建议写在 implementation.md"口径）。
 4. **不扩写时序方案**：record 未给出具体 OCC 时序实现方式（如切换周期数、握手信号），artifact 不发明方案，只规定判定口径与必检项，避免演绎。
-5. **去重扫描**：`~/.claude/rules/` 现有 4 条与 `eng-asset-ai-components/rules/` 均无 DFT/MBIST/scan 时序互斥内容，无重复实现。
+5. **去重扫描**：`~/.claude/rules/` 现有 4 条与 `native-assets-build/rules/` 均无 DFT/MBIST/scan 时序互斥内容，无重复实现。
 
 ## 测试结果
 
@@ -54,7 +54,7 @@ statement 的每条结论逐条落到 artifact，未增删语义。
 
 ## 校验记录
 
-命令：`python -X utf8 C:\Users\jie.li\.claude\skills\asset-ai-ize\scripts\validate_build.py D:\Project\eng-asset-ai-components\build\EA-20261022-08 --assets-repo D:\Project\eng-knowledge-assets`
+命令：`python -X utf8 C:\Users\jie.li\.claude\skills\asset-ai-ize\scripts\validate_build.py D:\Project\native-assets-build\build\EA-20261022-08 --assets-repo D:\Project\native-assets`
 
 退出码：0。输出末两行：
 

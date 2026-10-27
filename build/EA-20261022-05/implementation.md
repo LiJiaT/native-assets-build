@@ -6,7 +6,7 @@
 | proposal_id | 20261022-1705-ai-public-rules |
 | ai_form | Rule（record 映射结论，未改） |
 | 目标层级 / 领域 / 项目 | 公共级 / 无 / 无 |
-| record | eng-knowledge-assets `assets/20261022-1705-ai-public-rules/EA-20261022-05-subtask-acceptance-checklist.md`（approved 2026-10-22） |
+| record | native-assets `assets/20261022-1705-ai-public-rules/EA-20261022-05-subtask-acceptance-checklist.md`（approved 2026-10-22） |
 | 组件 owner | AI 平台团队（record owner；实际组件 owner 由评审指定） |
 | build 日期 | 2026-10-22 |
 | 实现物 | `artifacts/rule-subtask-acceptance-checklist.md` → 安装名 `~/.claude/rules/subtask-acceptance-checklist.md` |
@@ -31,7 +31,7 @@ statement 的每条结论逐条落到 artifact，未增删语义。
 2. **只写 record 给的三项最小内容**：交付物、通过条件、验证方式。未内置更细的字段表或模板，因为 record 只规定"至少包含"，扩展字段属项目事项（实现备注，不改资产语义）；字段校验一节因此只引用"必填字段齐全"这一既有机制，不定义字段清单。
 3. **把"不得执行"落成执行方的退回动作**：规则第 2 条与 statement 的"执行方退回"一致，使"不得执行"在会话内可判定，而不只是下游禁令。
 4. **与 EA-20261022-04 挂接**：同一提案的 EA-04（任何产出交付前必须验证或评审）要求"按验收清单逐项自查 + 独立复核"，本规则提供该清单，二者互补；本包不复制 EA-04 的自查/复核要求，只做引用。
-5. **去重扫描**：`~/.claude/rules/` 现有 4 条（auto-mode-classifier、editing-fenced-docs、external-ai-plans、telegram-bot-handlers）均不涉及子任务验收清单；`eng-asset-ai-components/rules/` 当前为空。无重复实现。
+5. **去重扫描**：`~/.claude/rules/` 现有 4 条（auto-mode-classifier、editing-fenced-docs、external-ai-plans、telegram-bot-handlers）均不涉及子任务验收清单；`native-assets-build/rules/` 当前为空。无重复实现。
 
 ## 测试结果
 
@@ -51,7 +51,7 @@ statement 的每条结论逐条落到 artifact，未增删语义。
 
 ## 校验记录
 
-命令：`python -X utf8 C:\Users\jie.li\.claude\skills\asset-ai-ize\scripts\validate_build.py D:\Project\eng-asset-ai-components\build\EA-20261022-05 --assets-repo D:\Project\eng-knowledge-assets`
+命令：`python -X utf8 C:\Users\jie.li\.claude\skills\asset-ai-ize\scripts\validate_build.py D:\Project\native-assets-build\build\EA-20261022-05 --assets-repo D:\Project\native-assets`
 
 退出码：0。输出末两行：
 

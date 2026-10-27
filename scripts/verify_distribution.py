@@ -3,8 +3,8 @@
 """I→G 分发对账：来源指针、版本/hash 与允许的转换说明。
 
 用法:
-  python scripts/verify_distribution.py --rules-repo ../ai-native-basic-component \
-      --assets-repo ../eng-knowledge-assets
+  python scripts/verify_distribution.py --rules-repo ../native-components \
+      --assets-repo ../native-assets
 """
 import argparse
 import hashlib

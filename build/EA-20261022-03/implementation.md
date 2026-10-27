@@ -6,7 +6,7 @@
 | proposal_id | 20261022-1705-ai-public-rules |
 | ai_form | Rule（record 映射结论，未改） |
 | 目标层级 / 领域 / 项目 | 公共级 / 无 / 无 |
-| record | eng-knowledge-assets `assets/20261022-1705-ai-public-rules/EA-20261022-03-no-auto-external-actions.md`（approved 2026-10-22） |
+| record | native-assets `assets/20261022-1705-ai-public-rules/EA-20261022-03-no-auto-external-actions.md`（approved 2026-10-22） |
 | 组件 owner | AI 平台团队（record owner；实际组件 owner 由评审指定） |
 | build 日期 | 2026-10-22 |
 | 实现物 | `artifacts/rule-no-auto-external-actions.md` → 安装名 `~/.claude/rules/no-auto-external-actions.md` |
@@ -30,7 +30,7 @@ statement 的每条结论逐条落到 artifact，未增删语义。
 2. **保留"权限与 hook 的双重拦截"原表述**：record 未指定具体 permission 规则或 hook 名称，本包不写 `settings.json` 片段、不改权限配置，避免把 Rule 扩成 Hook，也避免安装包携带环境改动。
 3. **"准备—确认—执行"写成三步可判定动作**：准备物（变更、命令、说明）与确认点均可在执行记录中核对，对应完成判定"执行记录中存在人的明确确认"。
 4. **不列举具体平台或通道**：record 的判定边界是"结果是否离开本地或团队内部环境"，用结果口径而非平台清单，避免名单过时导致漏判。
-5. **去重扫描**：`~/.claude/rules/` 现有 4 条与本条无重叠——`auto-mode-classifier.md` 处理分类器超时后的重试策略，不涉及对外动作禁令，也不允许绕过拦截，二者不合并；`eng-asset-ai-components/rules/` 当前为空。
+5. **去重扫描**：`~/.claude/rules/` 现有 4 条与本条无重叠——`auto-mode-classifier.md` 处理分类器超时后的重试策略，不涉及对外动作禁令，也不允许绕过拦截，二者不合并；`native-assets-build/rules/` 当前为空。
 
 ## 测试结果
 
@@ -50,7 +50,7 @@ statement 的每条结论逐条落到 artifact，未增删语义。
 
 ## 校验记录
 
-命令：`python -X utf8 C:\Users\jie.li\.claude\skills\asset-ai-ize\scripts\validate_build.py D:\Project\eng-asset-ai-components\build\EA-20261022-03 --assets-repo D:\Project\eng-knowledge-assets`
+命令：`python -X utf8 C:\Users\jie.li\.claude\skills\asset-ai-ize\scripts\validate_build.py D:\Project\native-assets-build\build\EA-20261022-03 --assets-repo D:\Project\native-assets`
 
 退出码：0。输出末两行：
 

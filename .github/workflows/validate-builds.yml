@@ -19,21 +19,21 @@ jobs:
           TOKEN: ${{ secrets.CROSS_REPO_TOKEN }}
         run: |
           if [ -z "$TOKEN" ]; then
-            echo "缺少 CROSS_REPO_TOKEN：需在仓库 Secrets 中配置可只读访问 eng-knowledge-assets 与 ai-native-basic-component 的令牌" >&2
+            echo "缺少 CROSS_REPO_TOKEN：需在仓库 Secrets 中配置可只读访问 native-assets 与 native-components 的令牌" >&2
             exit 1
           fi
       - uses: actions/checkout@v4
       - name: Checkout K (asset records)
         uses: actions/checkout@v4
         with:
-          repository: LiJiaT/eng-knowledge-assets
-          path: eng-knowledge-assets
+          repository: LiJiaT/native-assets
+          path: native-assets
           token: ${{ secrets.CROSS_REPO_TOKEN }}
       - name: Checkout G (validators)
         uses: actions/checkout@v4
         with:
-          repository: LiJiaT/ai-native-basic-component
-          path: ai-native-basic-component
+          repository: LiJiaT/native-components
+          path: native-components
           token: ${{ secrets.CROSS_REPO_TOKEN }}
       - uses: actions/setup-python@v5
         with:
@@ -42,10 +42,10 @@ jobs:
       - name: Validate packages and final rules
         run: |
           python -X utf8 scripts/validate_packages.py \
-            --assets-repo eng-knowledge-assets \
-            --validator ai-native-basic-component/skills/asset-ai-ize/scripts/validate_build.py
+            --assets-repo native-assets \
+            --validator native-components/skills/asset-ai-ize/scripts/validate_build.py
       - name: Verify I to G distribution
         run: |
           python -X utf8 scripts/verify_distribution.py \
-            --rules-repo ai-native-basic-component \
-            --assets-repo eng-knowledge-assets
+            --rules-repo native-components \
+            --assets-repo native-assets

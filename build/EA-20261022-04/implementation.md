@@ -6,7 +6,7 @@
 | proposal_id | 20261022-1705-ai-public-rules |
 | ai_form | Rule（record 映射结论，未改） |
 | 目标层级 / 领域 / 项目 | 公共级 / 无 / 无 |
-| record | eng-knowledge-assets `assets/20261022-1705-ai-public-rules/EA-20261022-04-verify-or-review-before-delivery.md`（approved 2026-10-22） |
+| record | native-assets `assets/20261022-1705-ai-public-rules/EA-20261022-04-verify-or-review-before-delivery.md`（approved 2026-10-22） |
 | 组件 owner | AI 平台团队（record owner；实际组件 owner 由评审指定） |
 | build 日期 | 2026-10-22 |
 | 实现物 | `artifacts/rule-verify-or-review-before-delivery.md` → 安装名 `~/.claude/rules/verify-or-review-before-delivery.md` |
@@ -31,7 +31,7 @@ statement 的每条结论逐条落到 artifact，未增删语义。
 2. **不内置验收清单模板**：record 要求"按验收清单"，但未给出统一清单内容，本包不发明检查项清单，只规定自查/复核的可复核形式（检查项 + 结论、"同一验收清单"）；具体清单由项目或组件 owner 提供（实现备注，不改资产语义）。
 3. **"独立"严格按 record 口径**：未参与执行的人，或与执行上下文独立的 AI 复核者；不额外定义独立性等级或工具要求。
 4. **与交付动作绑定**：把"标记完成/已交付"作为规则的可判定落点（第 5 条），使规则在交付环节可检查，而不只是倡导。
-5. **去重扫描**：`~/.claude/rules/` 现有 4 条均不涉及交付前自查与独立复核，无重叠；`eng-asset-ai-components/rules/` 当前为空。
+5. **去重扫描**：`~/.claude/rules/` 现有 4 条均不涉及交付前自查与独立复核，无重叠；`native-assets-build/rules/` 当前为空。
 
 ## 测试结果
 
@@ -51,7 +51,7 @@ statement 的每条结论逐条落到 artifact，未增删语义。
 
 ## 校验记录
 
-命令：`python -X utf8 C:\Users\jie.li\.claude\skills\asset-ai-ize\scripts\validate_build.py D:\Project\eng-asset-ai-components\build\EA-20261022-04 --assets-repo D:\Project\eng-knowledge-assets`
+命令：`python -X utf8 C:\Users\jie.li\.claude\skills\asset-ai-ize\scripts\validate_build.py D:\Project\native-assets-build\build\EA-20261022-04 --assets-repo D:\Project\native-assets`
 
 退出码：0。输出末两行：
 

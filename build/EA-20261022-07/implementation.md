@@ -10,7 +10,7 @@
 | proposal_id | 20261022-1705-hbm3e-dft-meeting |
 | ai_form | Memory（record 映射结论，未改） |
 | 目标层级 / 领域 / 项目 | 项目级 / DFT / HBM |
-| record | eng-knowledge-assets `assets/20261022-1705-hbm3e-dft-meeting/EA-20261022-07-hbm3e-dft-env-baseline.md`（approved 2026-10-22） |
+| record | native-assets `assets/20261022-1705-hbm3e-dft-meeting/EA-20261022-07-hbm3e-dft-env-baseline.md`（approved 2026-10-22） |
 | 组件 owner | HBM 项目负责人（record owner；实际组件 owner 由评审指定） |
 | build 日期 | 2026-10-22 |
 | 实现物 | `artifacts/memory-entry.md` → 建议安装名 `<HBM 项目 memory>/hbm3e-dft-env-baseline.md` |
@@ -34,7 +34,7 @@ record 的 statement 为知识库型：三个环境参数 + 两条使用约束�
 2. **负向边界原样保留**："不能按理论最大并发规划"与"不能按单 lane 粒度估算"是可复用结论的一部分（防误判），不是可省略的修饰语。
 3. **使用约束与失效条件分段**：把"何时必须以此为前提"和"何时失效"从参数值中拆出，避免读者把 2026-10-20 的快照当作永久事实。
 4. **角色限定为 HBM3E / 项目级**：条目不声明对 DFT 领域其他项目通用；具体 die 型号、工具名与命令 record 未给，不补全（补全即语义增量）。
-5. **去重扫描**：HBM 项目 memory 目录当前无任何条目，`~/.claude/memory/` 不存在，`eng-asset-ai-components/components/` 为空，无重复组件。
+5. **去重扫描**：HBM 项目 memory 目录当前无任何条目，`~/.claude/memory/` 不存在，`native-assets-build/components/` 为空，无重复组件。
 
 ## 独立成立性检查结果
 
@@ -57,7 +57,7 @@ record 的 statement 为知识库型：三个环境参数 + 两条使用约束�
 
 ## 校验记录
 
-命令：`python -X utf8 C:\Users\jie.li\.claude\skills\asset-ai-ize\scripts\validate_build.py D:\Project\eng-asset-ai-components\build\EA-20261022-07 --assets-repo D:\Project\eng-knowledge-assets`
+命令：`python -X utf8 C:\Users\jie.li\.claude\skills\asset-ai-ize\scripts\validate_build.py D:\Project\native-assets-build\build\EA-20261022-07 --assets-repo D:\Project\native-assets`
 
 退出码：0。输出末两行：
 

@@ -7,7 +7,7 @@
 - install_target: `test-sandbox`；release_channel: `test-only`
 
 > 本包**未安装**。安装须经组件 owner 评审（`review.md`）通过后由人执行；技能 B 不执行安装，不写项目 memory 目录。
-> 命令在 `eng-asset-ai-components` 仓库根目录执行（Git Bash / macOS 通用）。
+> 命令在 `native-assets-build` 仓库根目录执行（Git Bash / macOS 通用）。
 
 ## 目标位置（二选一，按 HBM 项目现行 memory 机制选择）
 

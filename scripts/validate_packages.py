@@ -3,8 +3,8 @@
 """对 build/ 下所有实现包运行技能 B 校验。
 
 用法:
-  python scripts/validate_packages.py --assets-repo ../eng-knowledge-assets
-  python scripts/validate_packages.py --assets-repo ../eng-knowledge-assets --validator ../ai-native-basic-component/skills/asset-ai-ize/scripts/validate_build.py
+  python scripts/validate_packages.py --assets-repo ../native-assets
+  python scripts/validate_packages.py --assets-repo ../native-assets --validator ../native-components/skills/asset-ai-ize/scripts/validate_build.py
 
 默认：9 个包结构层必须通过；release_channel=component-library 的包必须通过发布层，
 test-only 包必须被发布层拒绝（防止 synthetic 进入发布）。
@@ -16,7 +16,7 @@ import sys
 from pathlib import Path
 
 PKG_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_VALIDATOR = Path(__file__).resolve().parents[2] / "ai-native-basic-component/skills/asset-ai-ize/scripts/validate_build.py"
+DEFAULT_VALIDATOR = Path(__file__).resolve().parents[2] / "native-components/skills/asset-ai-ize/scripts/validate_build.py"
 
 
 def body_after_frontmatter(text):

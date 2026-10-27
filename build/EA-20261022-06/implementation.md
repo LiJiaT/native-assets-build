@@ -6,7 +6,7 @@
 | proposal_id | 20261022-1705-ai-public-rules |
 | ai_form | Rule（record 映射结论，未改） |
 | 目标层级 / 领域 / 项目 | 公共级 / 无 / 无 |
-| record | eng-knowledge-assets `assets/20261022-1705-ai-public-rules/EA-20261022-06-no-raw-records-in-memory.md`（approved 2026-10-22） |
+| record | native-assets `assets/20261022-1705-ai-public-rules/EA-20261022-06-no-raw-records-in-memory.md`（approved 2026-10-22） |
 | 组件 owner | AI 平台团队（record owner；实际组件 owner 由评审指定） |
 | build 日期 | 2026-10-22 |
 | 实现物 | `artifacts/rule-no-raw-records-in-memory.md` → 安装名 `~/.claude/rules/no-raw-records-in-memory.md` |
@@ -31,7 +31,7 @@ statement 的每条结论逐条落到 artifact，未增删语义。
 2. **不内联任何原始记录示例**：artifact 自身是 rules 文件、属本条定义的长期记忆载体，因此正文只写提炼后的要求，示例与反例一律只按类型指称（逐字稿、聊天记录、调试日志），不给出原文片段，避免规则文件本身成为违规样本。测试样例同样只描述场景类型，不含原始记录内容。
 3. **自身合规与出处引用**：record 的 evidence 已说明其正文为提炼后的规则文本、不含会议/聊天/日志原文，故不违反本条自身；artifact 沿用同一形态，仅保留"结论 + 出处引用"这一写法要求本身。按包级约定 provenance 只写本文件，artifact 不携带出处行；本文件末尾 provenance 行与上文「来源与理由」记录的材料名与日期，构成该规则文件的出处引用，结论可回溯而原文未被搬运。
 4. **只写规则，不造工具**：本条约束的是写入前的心智检查（"这是提炼后的结论吗"），record 未要求自动拦截，因此不配脚本或 hook；若后续要求强拦截，属另一次形态映射，不在本包扩展。
-5. **去重扫描**：`~/.claude/rules/` 现有 4 条均不涉及长期记忆写入形态；`eng-asset-ai-components/rules/` 当前为空；`~/.claude/skills/` 中无同语义规则型组件。未重复造件。
+5. **去重扫描**：`~/.claude/rules/` 现有 4 条均不涉及长期记忆写入形态；`native-assets-build/rules/` 当前为空；`~/.claude/skills/` 中无同语义规则型组件。未重复造件。
 
 ## 测试结果
 
@@ -52,7 +52,7 @@ statement 的每条结论逐条落到 artifact，未增删语义。
 
 ## 校验记录
 
-命令：`python -X utf8 C:\Users\jie.li\.claude\skills\asset-ai-ize\scripts\validate_build.py D:\Project\eng-asset-ai-components\build\EA-20261022-06 --assets-repo D:\Project\eng-knowledge-assets`
+命令：`python -X utf8 C:\Users\jie.li\.claude\skills\asset-ai-ize\scripts\validate_build.py D:\Project\native-assets-build\build\EA-20261022-06 --assets-repo D:\Project\native-assets`
 
 退出码：0。输出末两行：
 
